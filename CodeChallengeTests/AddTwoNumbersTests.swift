@@ -76,5 +76,13 @@ class AddTwoNumbersTests: XCTestCase {
 		// Expected sum: nil
 		sum = addTwoNumbers(l1: nil, l2: nil)
 		XCTAssertNil(sum)
+
+		/* CASE 8 */
+		l1 = createDigits(numbers: "2432432432432432432432432432432432432432432432432432432432439")
+		l2 = createDigits(numbers: "5642432432432432432432432432432432432432432432432432432439999")
+
+		sum = addTwoNumbers(l1: l1, l2: l2)
+		val = listNodeInString(l: sum)
+		XCTAssertEqual(val, "8074864864864864864864864864864864864864864864864864864872438")
 	}
 }
