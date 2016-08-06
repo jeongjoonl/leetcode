@@ -1,5 +1,5 @@
 # CodeChallenge
-Challenging my ability to solve algorithms problems or puzzles.
+Challenging my ability to solve algorithms and problems.
 
 Language
 --------
