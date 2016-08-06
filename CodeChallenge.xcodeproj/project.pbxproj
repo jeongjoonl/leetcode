@@ -11,6 +11,7 @@
 		7646AB061D55777500AD1FD8 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB051D55777500AD1FD8 /* TwoSum.swift */; };
 		7646AB081D55977F00AD1FD8 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB071D55977F00AD1FD8 /* AddTwoNumbers.swift */; };
 		7646AB0A1D55B47E00AD1FD8 /* AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB091D55B47E00AD1FD8 /* AddTwoNumbersTests.swift */; };
+		7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB0B1D569E6C00AD1FD8 /* LongestSubstring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7646AB051D55777500AD1FD8 /* TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		7646AB071D55977F00AD1FD8 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		7646AB091D55B47E00AD1FD8 /* AddTwoNumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTests.swift; sourceTree = "<group>"; };
+		7646AB0B1D569E6C00AD1FD8 /* LongestSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				7646AB051D55777500AD1FD8 /* TwoSum.swift */,
 				7646AB071D55977F00AD1FD8 /* AddTwoNumbers.swift */,
+				7646AB0B1D569E6C00AD1FD8 /* LongestSubstring.swift */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7646AB081D55977F00AD1FD8 /* AddTwoNumbers.swift in Sources */,
+				7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */,
 				7646AB0A1D55B47E00AD1FD8 /* AddTwoNumbersTests.swift in Sources */,
 				7646AB061D55777500AD1FD8 /* TwoSum.swift in Sources */,
 				7646AAF81D5576B900AD1FD8 /* TwoSumTests.swift in Sources */,
