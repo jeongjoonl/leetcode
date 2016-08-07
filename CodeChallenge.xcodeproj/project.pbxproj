@@ -13,6 +13,8 @@
 		7646AB0A1D55B47E00AD1FD8 /* AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB091D55B47E00AD1FD8 /* AddTwoNumbersTests.swift */; };
 		7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB0B1D569E6C00AD1FD8 /* LongestSubstring.swift */; };
 		7646AB0E1D56BBB600AD1FD8 /* LongestSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB0D1D56BBB600AD1FD8 /* LongestSubstringTests.swift */; };
+		7646AB101D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB0F1D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift */; };
+		7646AB121D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB111D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7646AB091D55B47E00AD1FD8 /* AddTwoNumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTests.swift; sourceTree = "<group>"; };
 		7646AB0B1D569E6C00AD1FD8 /* LongestSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		7646AB0D1D56BBB600AD1FD8 /* LongestSubstringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestSubstringTests.swift; sourceTree = "<group>"; };
+		7646AB0F1D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedianOfTwoSortedArray.swift; sourceTree = "<group>"; };
+		7646AB111D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedianOfTwoSortedArrayTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				7646AB091D55B47E00AD1FD8 /* AddTwoNumbersTests.swift */,
 				7646AB0D1D56BBB600AD1FD8 /* LongestSubstringTests.swift */,
 				7646AAF31D55768D00AD1FD8 /* Info.plist */,
+				7646AB111D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift */,
 			);
 			path = CodeChallengeTests;
 			sourceTree = "<group>";
@@ -71,6 +76,7 @@
 				7646AB051D55777500AD1FD8 /* TwoSum.swift */,
 				7646AB071D55977F00AD1FD8 /* AddTwoNumbers.swift */,
 				7646AB0B1D569E6C00AD1FD8 /* LongestSubstring.swift */,
+				7646AB0F1D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -142,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7646AB101D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift in Sources */,
 				7646AB081D55977F00AD1FD8 /* AddTwoNumbers.swift in Sources */,
 				7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */,
 				7646AB0E1D56BBB600AD1FD8 /* LongestSubstringTests.swift in Sources */,
+				7646AB121D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift in Sources */,
 				7646AB0A1D55B47E00AD1FD8 /* AddTwoNumbersTests.swift in Sources */,
 				7646AB061D55777500AD1FD8 /* TwoSum.swift in Sources */,
 				7646AAF81D5576B900AD1FD8 /* TwoSumTests.swift in Sources */,
