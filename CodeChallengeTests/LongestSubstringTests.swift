@@ -11,7 +11,7 @@ import XCTest
 class LongestSubstringTests: XCTestCase {
 	func testLengthOfLongestSubstring() {
 		// String: "abcabcddd", Substring "abc" -> 3
-		var result = lengthOfLongestSubstring(s: "abcabcddd")
+		var result = lengthOfLongestSubstring(s: "abcabcbb")
 		XCTAssertEqual(result, 3)
 
 		// String "aaaaaaaaaaaaa", Substring "a" -> 1
@@ -27,11 +27,11 @@ class LongestSubstringTests: XCTestCase {
 		XCTAssertEqual(result, 7)
 
 		// String "abcdefcabghi" Substring "defcabghi" -> 9
-		result = lengthOfLongestSubstring(s: "abcdefcabgd")
+		result = lengthOfLongestSubstring(s: "abcdefcabghi")
 		XCTAssertEqual(result, 9)
 
 		// String "abcdefcccdehi" Substring "abcdef" -> 6
-		result = lengthOfLongestSubstring(s: "abcdefcabgd")
+		result = lengthOfLongestSubstring(s: "abcdefcccdehi")
 		XCTAssertEqual(result, 6)
 	}
 }
