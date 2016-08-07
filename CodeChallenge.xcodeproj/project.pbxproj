@@ -59,8 +59,8 @@
 			children = (
 				7646AAF71D5576B900AD1FD8 /* TwoSumTests.swift */,
 				7646AB091D55B47E00AD1FD8 /* AddTwoNumbersTests.swift */,
-				7646AAF31D55768D00AD1FD8 /* Info.plist */,
 				7646AB0D1D56BBB600AD1FD8 /* LongestSubstringTests.swift */,
+				7646AAF31D55768D00AD1FD8 /* Info.plist */,
 			);
 			path = CodeChallengeTests;
 			sourceTree = "<group>";
