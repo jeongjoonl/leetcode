@@ -33,5 +33,9 @@ class LongestSubstringTests: XCTestCase {
 		// String "abcdefcccdehi" Substring "abcdef" -> 6
 		result = lengthOfLongestSubstring(s: "abcdefcccdehi")
 		XCTAssertEqual(result, 6)
+
+		// String "abcdefghijk" Substring "abcdefghijk" -> 11
+		result = lengthOfLongestSubstring(s: "abcdefghijk")
+		XCTAssertEqual(result, 11)
 	}
 }
