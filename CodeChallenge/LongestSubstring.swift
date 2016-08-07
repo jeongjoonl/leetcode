@@ -18,28 +18,23 @@
 /// - returns: length of the longest substring without repeating characters
 func lengthOfLongestSubstring(s: String) -> Int {
 
-	var cut = 0, longestLength = 0
-	var indexMap = [Character:Int]()
+	var start = -1, result = 0
+	var map = [Character:Int]()
 
 	for index in s.characters.indices {
 		let key = s[index]
 		let i = s.distance(from: s.startIndex, to: index)
 
-		if let val = indexMap[key] {
-			if val >= cut {
-				// Update cut
-				cut = val + 1
-			}
+		if let val = map[key] {
+			// Update start index of substring
+			start = max(start, val)
 		}
 
-		// Add/Update mapping
-		indexMap[key] = i
+		// Add/Update map
+		map[key] = i
 
 		// Update longest length
-		let curLength = i - cut + 1
-		longestLength = max(longestLength, curLength)
-
+		result = max(result, i - start)
 	}
-
-	return longestLength
+	return result
 }
