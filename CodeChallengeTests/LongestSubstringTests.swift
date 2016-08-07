@@ -22,20 +22,24 @@ class LongestSubstringTests: XCTestCase {
 		result = lengthOfLongestSubstring(s: "pwwkew")
 		XCTAssertEqual(result, 3)
 
-		// String "abcdefcabgd" Substring "defcabg" -> 7
+		// String "abcdefcabgd", Substring "defcabg" -> 7
 		result = lengthOfLongestSubstring(s: "abcdefcabgd")
 		XCTAssertEqual(result, 7)
 
-		// String "abcdefcabghi" Substring "defcabghi" -> 9
+		// String "abcdefcabghi", Substring "defcabghi" -> 9
 		result = lengthOfLongestSubstring(s: "abcdefcabghi")
 		XCTAssertEqual(result, 9)
 
-		// String "abcdefcccdehi" Substring "abcdef" -> 6
+		// String "abcdefcccdehi", Substring "abcdef" -> 6
 		result = lengthOfLongestSubstring(s: "abcdefcccdehi")
 		XCTAssertEqual(result, 6)
 
-		// String "abcdefghijk" Substring "abcdefghijk" -> 11
+		// String "abcdefghijk", Substring "abcdefghijk" -> 11
 		result = lengthOfLongestSubstring(s: "abcdefghijk")
 		XCTAssertEqual(result, 11)
+
+		// String "abcdefcabgdhi", Substring "efcabgdhi" -> 9
+		result = lengthOfLongestSubstring(s: "abcdefcabgdhi")
+		XCTAssertEqual(result, 9)
 	}
 }
