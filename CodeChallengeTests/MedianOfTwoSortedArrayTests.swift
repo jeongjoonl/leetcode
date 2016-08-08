@@ -30,5 +30,11 @@ class MedianOfTwoSortedArrayTests: XCTestCase {
 
 		result = findMedianSortedArrays(nums1: [2, 2, 2], nums2: [2, 2, 2])
 		XCTAssertEqual(result, 2.0)
+
+		result = findMedianSortedArrays(nums1: [1], nums2: [2])
+		XCTAssertEqual(result, 1.5)
+
+		result = findMedianSortedArrays(nums1: [2], nums2: [1])
+		XCTAssertEqual(result, 1.5)
 	}
 }
