@@ -33,7 +33,6 @@ func addTwoNumbers(l1: ListNode?, l2: ListNode?) -> ListNode? {
 
 	var carry = 0
 	while l1 != nil || l2 != nil || carry == 1 {
-		// Add digit
 		var sum = carry
 		if let n1 = l1 {
 			sum += n1.val
@@ -42,19 +41,13 @@ func addTwoNumbers(l1: ListNode?, l2: ListNode?) -> ListNode? {
 			sum += n2.val
 		}
 
-		// Update carry
-		carry = sum / 10
-
-		// Create new digit node for sum
 		let node = ListNode(sum % 10)
-
-		// Update result node
 		i.next = node
 		i = node
 
-		// Next node
 		l1 = l1?.next
 		l2 = l2?.next
+		carry = sum / 10
 	}
 
 	return result.next

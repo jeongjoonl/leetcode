@@ -26,14 +26,11 @@ func lengthOfLongestSubstring(s: String) -> Int {
 		let i = s.distance(from: s.startIndex, to: index)
 
 		if let val = map[key] {
-			// Update start index of substring
 			start = max(start, val)
 		}
 
-		// Add/Update map
 		map[key] = i
 
-		// Update longest length
 		result = max(result, i - start)
 	}
 	return result

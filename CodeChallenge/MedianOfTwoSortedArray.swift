@@ -32,14 +32,11 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 
 	// Choose shorter array
 	if m > n {
-		// Swap nums1 and nums2
+		// Swap two sorted arrays and its length
 		(nums1, nums2) = (nums2, nums1)
-
-		// Swap m and n
 		(m, n) = (n, m)
 	}
 
-	// Set i and j
 	// i for the nums1 index and j for the nums2 index
 	var i = 0, j = 0
 	var imin = 0, imax = m
@@ -57,7 +54,6 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 		}
 	}
 
-	// Find maxLeft
 	var maxLeft: Int?
 	if i == 0 {
 		maxLeft = nums2[j-1]
@@ -67,13 +63,10 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 		maxLeft = max(nums1[i-1], nums2[j-1])
 	}
 
-
-	// Total length is odd
 	if (m + n) % 2 == 1 {
 		return Double(maxLeft!)
 	}
 
-	// Find minRight
 	var minRight: Int?
 	if i == m {
 		minRight = nums2[j]
@@ -83,7 +76,5 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 		minRight = min(nums1[i], nums2[j])
 	}
 
-	// Total length is even
-	// Return the average of two numbers
 	return Double(maxLeft! + minRight!) / 2.0
 }

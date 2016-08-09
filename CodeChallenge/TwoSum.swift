@@ -21,16 +21,14 @@
 /// - returns: indices of the two numbers in list that sum up to target number
 func twoSum(nums: [Int], target: Int) -> [(Int, Int)] {
 	var answers = [(Int, Int)]()
-
-	// Create dictionary that maps number to index
-	var dict = [Int:Int]()
+	var map = [Int:Int]()
 
 	for i in 0..<nums.count {
 		let num = nums[i]
 
-		dict[num] = i
+		map[num] = i
 
-		if let j = dict[target - num] {
+		if let j = map[target - num] {
 			answers.append( (j, i) )
 		}
 	}
