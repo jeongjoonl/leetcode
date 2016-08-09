@@ -22,7 +22,7 @@
 /// - parameter nums2: sorted array
 ///
 /// - returns: median of the two sorted arrays
-func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
+func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double {
 	var nums1 = nums1
 	var nums2 = nums2
 
@@ -38,7 +38,7 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 	}
 
 	// i for the nums1 index and j for the nums2 index
-	var i = 0, j = 0
+	var i: Int!, j: Int!
 	var imin = 0, imax = m
 
 	while true {
@@ -54,7 +54,7 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 		}
 	}
 
-	var maxLeft: Int?
+	var maxLeft: Int!
 	if i == 0 {
 		maxLeft = nums2[j-1]
 	} else if j == 0 {
@@ -64,10 +64,10 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 	}
 
 	if (m + n) % 2 == 1 {
-		return Double(maxLeft!)
+		return Double(maxLeft)
 	}
 
-	var minRight: Int?
+	var minRight: Int!
 	if i == m {
 		minRight = nums2[j]
 	} else if j == n {
@@ -76,5 +76,5 @@ func findMedianSortedArrays( nums1: [Int], nums2: [Int]) -> Double? {
 		minRight = min(nums1[i], nums2[j])
 	}
 
-	return Double(maxLeft! + minRight!) / 2.0
+	return Double(maxLeft + minRight) / 2.0
 }
