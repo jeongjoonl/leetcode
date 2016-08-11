@@ -11,5 +11,13 @@ import XCTest
 class LongestPalindromicSubstringTests: XCTestCase {
 	func testLongestPalindrome() {
 
+		var result = longestPalindrome(s: "aaaaaaaaaaaaaaaaaa")
+		XCTAssertEqual(result, "aaaaaaaaaaaaaaaaaa")
+
+		result = longestPalindrome(s: "aaabcdefggfedcbggih")
+		XCTAssertEqual(result, "bcdefggfedcb")
+
+		result = longestPalindrome(s: "aaabcdefghijklmnoponmlkjihgfedcbabcdef")
+		XCTAssertEqual(result, "abcdefghijklmnoponmlkjihgfedcba")
 	}
 }
