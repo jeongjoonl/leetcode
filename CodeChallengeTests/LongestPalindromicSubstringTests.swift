@@ -10,9 +10,23 @@ import XCTest
 
 class LongestPalindromicSubstringTests: XCTestCase {
 	func testLongestPalindrome() {
+		var result = longestPalindrome(s: "a")
+		XCTAssertEqual(result, "a")
 
-		var result = longestPalindrome(s: "aaaaaaaaaaaaaaaaaa")
-		XCTAssertEqual(result, "aaaaaaaaaaaaaaaaaa")
+		result = longestPalindrome(s: "aa")
+		XCTAssertEqual(result, "aa")
+
+		result = longestPalindrome(s: "aaa")
+		XCTAssertEqual(result, "aaa")
+
+		result = longestPalindrome(s: "aba")
+		XCTAssertEqual(result, "aba")
+
+		result = longestPalindrome(s: "aaaaa")
+		XCTAssertEqual(result, "aaaaa")
+
+		result = longestPalindrome(s: "aaaaaa")
+		XCTAssertEqual(result, "aaaaaa")
 
 		result = longestPalindrome(s: "aaabcdefggfedcbggih")
 		XCTAssertEqual(result, "bcdefggfedcb")
@@ -21,3 +35,4 @@ class LongestPalindromicSubstringTests: XCTestCase {
 		XCTAssertEqual(result, "abcdefghijklmnoponmlkjihgfedcba")
 	}
 }
+
