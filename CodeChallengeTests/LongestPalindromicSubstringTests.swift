@@ -19,14 +19,20 @@ class LongestPalindromicSubstringTests: XCTestCase {
 		result = longestPalindrome(s: "aaa")
 		XCTAssertEqual(result, "aaa")
 
-		result = longestPalindrome(s: "aba")
-		XCTAssertEqual(result, "aba")
-
 		result = longestPalindrome(s: "aaaaa")
 		XCTAssertEqual(result, "aaaaa")
 
 		result = longestPalindrome(s: "aaaaaa")
 		XCTAssertEqual(result, "aaaaaa")
+
+		result = longestPalindrome(s: "aba")
+		XCTAssertEqual(result, "aba")
+
+		result = longestPalindrome(s: "ababa")
+		XCTAssertEqual(result, "ababa")
+
+		result = longestPalindrome(s: "cdeababafg")
+		XCTAssertEqual(result, "ababa")
 
 		result = longestPalindrome(s: "aaabcdefggfedcbggih")
 		XCTAssertEqual(result, "bcdefggfedcb")
@@ -35,4 +41,3 @@ class LongestPalindromicSubstringTests: XCTestCase {
 		XCTAssertEqual(result, "abcdefghijklmnoponmlkjihgfedcba")
 	}
 }
-
