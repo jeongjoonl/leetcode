@@ -50,6 +50,11 @@ func convert(s: String, numRows: Int) -> String {
 	return String(result)
 }
 
+/// Get character at index i with subscript
+/// For example:
+///     let a = "hello"
+///     a[0] is "h"
+///     a[3] is "l"
 private extension String {
 	subscript (i: Int) -> Character {
 		get {
