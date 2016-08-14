@@ -16,10 +16,44 @@
 ///
 /// convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 ///
-/// - parameter s:       <#s description#>
-/// - parameter numRows: <#numRows description#>
+/// - parameter s:       arbitrary string
+/// - parameter numRows: number of rows
 ///
-/// - returns: <#return value description#>
-func convert(s: String, _ numRows: Int) -> String {
-	return ""
+/// - returns: zigzag pattern
+func convert(s: String, numRows: Int) -> String {
+	if numRows == 1 { return s }
+	var result = [Character](repeating: " ", count: s.characters.count)
+	var index = 0
+
+	let loop = numRows * 2 - 2
+	for row in 0..<numRows {
+		
+		let i = (row == numRows-1) ? loop : loop - row * 2
+		let j = (i == loop)        ? loop : loop - i
+
+		var iTurn = true
+		var someNum = row
+		while (someNum < s.characters.count && index < result.count) {
+			result[index] = s[someNum]
+			index += 1
+
+			if iTurn {
+				someNum += i
+			} else {
+				someNum += j
+			}
+
+			iTurn = !iTurn
+		}
+	}
+
+	return String(result)
+}
+
+private extension String {
+	subscript (i: Int) -> Character {
+		get {
+			return self[self.index(self.startIndex, offsetBy: i)]
+		}
+	}
 }
