@@ -17,6 +17,8 @@
 		7646AB121D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646AB111D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift */; };
 		769A618D1D5B13D000BAEC7E /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A618C1D5B13D000BAEC7E /* LongestPalindromicSubstring.swift */; };
 		769A618F1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A618E1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift */; };
+		76C54F821D614DB900E0863A /* ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C54F811D614DB900E0863A /* ReverseInteger.swift */; };
+		76C54F841D614E0900E0863A /* ReverseIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */; };
 		76F1B08E1D5EECED0000F343 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */; };
 		76F1B0901D5EECFD0000F343 /* ZigZag ConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		7646AB111D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedianOfTwoSortedArrayTests.swift; sourceTree = "<group>"; };
 		769A618C1D5B13D000BAEC7E /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		769A618E1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstringTests.swift; sourceTree = "<group>"; };
+		76C54F811D614DB900E0863A /* ReverseInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseInteger.swift; sourceTree = "<group>"; };
+		76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseIntegerTests.swift; sourceTree = "<group>"; };
 		76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 		76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZigZag ConversionTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,7 @@
 				7646AB111D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift */,
 				769A618E1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift */,
 				76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */,
+				76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */,
 				7646AAF31D55768D00AD1FD8 /* Info.plist */,
 			);
 			path = CodeChallengeTests;
@@ -89,6 +94,7 @@
 				7646AB0F1D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift */,
 				769A618C1D5B13D000BAEC7E /* LongestPalindromicSubstring.swift */,
 				76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */,
+				76C54F811D614DB900E0863A /* ReverseInteger.swift */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -169,9 +175,11 @@
 				7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */,
 				7646AB0E1D56BBB600AD1FD8 /* LongestSubstringTests.swift in Sources */,
 				7646AB121D57DC5400AD1FD8 /* MedianOfTwoSortedArrayTests.swift in Sources */,
+				76C54F841D614E0900E0863A /* ReverseIntegerTests.swift in Sources */,
 				7646AB0A1D55B47E00AD1FD8 /* AddTwoNumbersTests.swift in Sources */,
 				7646AB061D55777500AD1FD8 /* TwoSum.swift in Sources */,
 				7646AAF81D5576B900AD1FD8 /* TwoSumTests.swift in Sources */,
+				76C54F821D614DB900E0863A /* ReverseInteger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
