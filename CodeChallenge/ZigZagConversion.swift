@@ -22,32 +22,19 @@
 /// - returns: zigzag pattern
 func convert(s: String, numRows: Int) -> String {
 	if numRows == 1 { return s }
-	var result = [Character](repeating: " ", count: s.characters.count)
-	var index = 0
 
-	let loop = numRows * 2 - 2
-	for row in 0..<numRows {
+	var result = [String](repeating: "", count: numRows)
+	let loop = 2 * numRows - 2
+	for i in 0..<s.characters.count {
+		var index = i % loop
 		
-		let i = (row == numRows-1) ? loop : loop - row * 2
-		let j = (i == loop)        ? loop : loop - i
-
-		var iTurn = true
-		var someNum = row
-		while (someNum < s.characters.count && index < result.count) {
-			result[index] = s[someNum]
-			index += 1
-
-			if iTurn {
-				someNum += i
-			} else {
-				someNum += j
-			}
-
-			iTurn = !iTurn
+		if index > numRows - 1 {
+			index = loop - index
 		}
-	}
 
-	return String(result)
+		result[index].append(s[i])
+	}
+	return result.joined(separator: "")
 }
 
 /// Get character at index i with subscript
