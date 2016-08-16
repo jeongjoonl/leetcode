@@ -15,5 +15,11 @@
 ///
 /// - returns: reversed digits of integer
 func reverse(x: Int) -> Int {
-	return 0
+	var x = x
+	var result = 0
+	while x != 0 {
+		result = result * 10 + (x % 10)
+		x /= 10
+	}
+	return result
 }
