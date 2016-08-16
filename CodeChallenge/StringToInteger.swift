@@ -59,3 +59,10 @@ func myAtoi2(str: String) -> Int? {
 
 	return result != nil ? sign * result! : nil
 }
+
+/// This function gives the best performance among other two functions
+/// Indeed, conversion from Character type to Integer type is done by Int(String(someChar)) in Swift,
+/// so the above functions are inefficient than this one.
+//func myAtoi(str: String) -> Int? {
+//	return Int(str)
+//}
