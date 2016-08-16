@@ -20,4 +20,15 @@ class StringToIntegerTests: XCTestCase {
 		XCTAssertEqual(myAtoi(str: "-123c"), nil)
 		XCTAssertEqual(myAtoi(str: "-12z3"), nil)
 	}
+	func testMyAtoi2() {
+		XCTAssertEqual(myAtoi2(str: "123"), 123)
+		XCTAssertEqual(myAtoi2(str: "-123"), -123)
+		XCTAssertEqual(myAtoi2(str: "923912312312326432"), 923912312312326432)
+		XCTAssertEqual(myAtoi2(str: "-923912312312326432"), -923912312312326432)
+		XCTAssertEqual(myAtoi2(str: "123-"), nil)
+		XCTAssertEqual(myAtoi2(str: "a123"), nil)
+		XCTAssertEqual(myAtoi2(str: "1b23"), nil)
+		XCTAssertEqual(myAtoi2(str: "-123c"), nil)
+		XCTAssertEqual(myAtoi2(str: "-12z3"), nil)
+	}
 }
