@@ -19,6 +19,8 @@
 		769A618F1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A618E1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift */; };
 		76C54F821D614DB900E0863A /* ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C54F811D614DB900E0863A /* ReverseInteger.swift */; };
 		76C54F841D614E0900E0863A /* ReverseIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */; };
+		76CE7BF11D629F8A00B131AB /* StringToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE7BF01D629F8A00B131AB /* StringToInteger.swift */; };
+		76CE7BF31D629F9C00B131AB /* StringToIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE7BF21D629F9C00B131AB /* StringToIntegerTests.swift */; };
 		76F1B08E1D5EECED0000F343 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */; };
 		76F1B0901D5EECFD0000F343 /* ZigZag ConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		769A618E1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstringTests.swift; sourceTree = "<group>"; };
 		76C54F811D614DB900E0863A /* ReverseInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseInteger.swift; sourceTree = "<group>"; };
 		76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseIntegerTests.swift; sourceTree = "<group>"; };
+		76CE7BF01D629F8A00B131AB /* StringToInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToInteger.swift; sourceTree = "<group>"; };
+		76CE7BF21D629F9C00B131AB /* StringToIntegerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToIntegerTests.swift; sourceTree = "<group>"; };
 		76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 		76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZigZag ConversionTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,7 @@
 				769A618E1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift */,
 				76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */,
 				76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */,
+				76CE7BF21D629F9C00B131AB /* StringToIntegerTests.swift */,
 				7646AAF31D55768D00AD1FD8 /* Info.plist */,
 			);
 			path = CodeChallengeTests;
@@ -95,6 +100,7 @@
 				769A618C1D5B13D000BAEC7E /* LongestPalindromicSubstring.swift */,
 				76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */,
 				76C54F811D614DB900E0863A /* ReverseInteger.swift */,
+				76CE7BF01D629F8A00B131AB /* StringToInteger.swift */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -166,10 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CE7BF31D629F9C00B131AB /* StringToIntegerTests.swift in Sources */,
 				769A618D1D5B13D000BAEC7E /* LongestPalindromicSubstring.swift in Sources */,
 				7646AB101D57DC4000AD1FD8 /* MedianOfTwoSortedArray.swift in Sources */,
 				7646AB081D55977F00AD1FD8 /* AddTwoNumbers.swift in Sources */,
 				76F1B08E1D5EECED0000F343 /* ZigZagConversion.swift in Sources */,
+				76CE7BF11D629F8A00B131AB /* StringToInteger.swift in Sources */,
 				76F1B0901D5EECFD0000F343 /* ZigZag ConversionTests.swift in Sources */,
 				769A618F1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift in Sources */,
 				7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */,
