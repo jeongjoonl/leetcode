@@ -23,6 +23,8 @@
 		76CE7BF31D629F9C00B131AB /* StringToIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE7BF21D629F9C00B131AB /* StringToIntegerTests.swift */; };
 		76F1B08E1D5EECED0000F343 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */; };
 		76F1B0901D5EECFD0000F343 /* ZigZag ConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */; };
+		76F21F841D62FBE8001A15F1 /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F21F831D62FBE8001A15F1 /* PalindromeNumber.swift */; };
+		76F21F861D62FC3D001A15F1 /* PalindromeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F21F851D62FC3D001A15F1 /* PalindromeNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		76CE7BF21D629F9C00B131AB /* StringToIntegerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToIntegerTests.swift; sourceTree = "<group>"; };
 		76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 		76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZigZag ConversionTests.swift"; sourceTree = "<group>"; };
+		76F21F831D62FBE8001A15F1 /* PalindromeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
+		76F21F851D62FC3D001A15F1 /* PalindromeNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromeNumberTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				76F1B08F1D5EECFD0000F343 /* ZigZag ConversionTests.swift */,
 				76C54F831D614E0900E0863A /* ReverseIntegerTests.swift */,
 				76CE7BF21D629F9C00B131AB /* StringToIntegerTests.swift */,
+				76F21F851D62FC3D001A15F1 /* PalindromeNumberTests.swift */,
 				7646AAF31D55768D00AD1FD8 /* Info.plist */,
 			);
 			path = CodeChallengeTests;
@@ -101,6 +106,7 @@
 				76F1B08D1D5EECED0000F343 /* ZigZagConversion.swift */,
 				76C54F811D614DB900E0863A /* ReverseInteger.swift */,
 				76CE7BF01D629F8A00B131AB /* StringToInteger.swift */,
+				76F21F831D62FBE8001A15F1 /* PalindromeNumber.swift */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 				76F1B08E1D5EECED0000F343 /* ZigZagConversion.swift in Sources */,
 				76CE7BF11D629F8A00B131AB /* StringToInteger.swift in Sources */,
 				76F1B0901D5EECFD0000F343 /* ZigZag ConversionTests.swift in Sources */,
+				76F21F841D62FBE8001A15F1 /* PalindromeNumber.swift in Sources */,
 				769A618F1D5B13E700BAEC7E /* LongestPalindromicSubstringTests.swift in Sources */,
 				7646AB0C1D569E6C00AD1FD8 /* LongestSubstring.swift in Sources */,
 				7646AB0E1D56BBB600AD1FD8 /* LongestSubstringTests.swift in Sources */,
@@ -186,6 +193,7 @@
 				76C54F841D614E0900E0863A /* ReverseIntegerTests.swift in Sources */,
 				7646AB0A1D55B47E00AD1FD8 /* AddTwoNumbersTests.swift in Sources */,
 				7646AB061D55777500AD1FD8 /* TwoSum.swift in Sources */,
+				76F21F861D62FC3D001A15F1 /* PalindromeNumberTests.swift in Sources */,
 				7646AAF81D5576B900AD1FD8 /* TwoSumTests.swift in Sources */,
 				76C54F821D614DB900E0863A /* ReverseInteger.swift in Sources */,
 			);
