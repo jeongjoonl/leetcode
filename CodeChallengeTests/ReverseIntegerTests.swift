@@ -14,6 +14,8 @@ class ReverseIntegerTests: XCTestCase {
 		XCTAssertEqual(reverse(x: -123), -321)
 		XCTAssertEqual(reverse(x: 0), 0)
 		XCTAssertEqual(reverse(x: 123450), 54321)
+		XCTAssertEqual(reverse(x: -123450), -54321)
 		XCTAssertEqual(reverse(x: 12345012342), 24321054321)
+		XCTAssertEqual(reverse(x: -12345012342), -24321054321)
 	}
 }
