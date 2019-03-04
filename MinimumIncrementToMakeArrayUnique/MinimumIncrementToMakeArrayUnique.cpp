@@ -21,29 +21,15 @@
 
 int minIncrementForUnique(vector<int>& A)
 {
-	int moves = 0;
+	sort(A.begin(), A.end());
 
-	set<int> seen; 
-	
+	int moves = 0;
+	int need = 0;
 	for (const auto& VALUE : A)
 	{
-		if (seen.find(VALUE) == seen.end())
-		{
-			seen.insert(VALUE);
-		}
-		else
-		{
-			int incVal = VALUE;
-			do
-			{
-				++incVal;
-				++moves;
-				
-			} while (seen.find(incVal) != seen.end());
-			
-			seen.insert(incVal);
-		}
+		moves += max(need - VALUE, 0);
+		need = max(need, VALUE) + 1;
 	}
-	
+
 	return moves;
 }
