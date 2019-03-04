@@ -1,5 +1,5 @@
 //
-//  LongestSubstring.swift
+//  LongestSubstringWithoutRepeatingCharacters.swift
 //  CodeChallenge
 //
 //  Created by Jeongjoon Lee on 8/6/16.
