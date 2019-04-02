@@ -28,37 +28,28 @@
 
 bool isValidBST(TreeNode* root)
 {
-	if (root == nullptr)
+	TreeNode* preNode = NULL;
+	return validate(root, preNode);
+}
+
+bool validate(TreeNode* node, TreeNode* &preNode)
+{
+	if (node == NULL)
 	{
 		return true;
 	}
 	
-	std::queue<int> q;
-	isValidBST(root, q);
-	
-	int val = q.front();
-	q.pop();
-	
-	while(!q.empty())
+	if (!validate(node->left, preNode))
 	{
-		if (val >= q.front())
-		{
-			return false;
-		}
-		val = q.front();
-		q.pop();
+		return false;
 	}
 	
-	return true;
-}
-
-void isValidBST(TreeNode* node, std::queue<int>& q)
-{
-	if (node == nullptr)
+	if (preNode != NULL && preNode->val >= node->val)
 	{
-		return;
+		return false;
 	}
-	isValidBST(node->left, q);
-	q.push(node->val);
-	isValidBST(node->right, q);
+	
+	preNode = node;
+	
+	return validate(node->right, preNode);
 }
