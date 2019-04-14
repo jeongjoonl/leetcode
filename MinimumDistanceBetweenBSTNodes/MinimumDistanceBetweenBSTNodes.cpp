@@ -1,5 +1,5 @@
 // MinimumDistanceBetweenBSTNodes.cpp
-// Created by Jeongjoon Lee on 4/13/201
+// Created by Jeongjoon Lee on 4/13/2019.
 
 // Given a Binary Search Tree (BST) with the root node root, return the minimum difference between the values of any two different nodes in the tree.
 //

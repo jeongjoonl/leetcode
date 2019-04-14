@@ -1,5 +1,5 @@
 // ValidateBinarySearchTree.cpp
-// Created by Jeongjoon Lee on 3/29/2019
+// Created by Jeongjoon Lee on 3/29/2019.
 
 // Given a binary tree, determine if it is a valid binary search tree (BST).
 // 

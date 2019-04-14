@@ -1,5 +1,5 @@
 // RemoveInvalidParentheses.cpp
-// Created by Jeongjoon Lee on 3/28/2019
+// Created by Jeongjoon Lee on 3/28/2019.
 
 // Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 // 

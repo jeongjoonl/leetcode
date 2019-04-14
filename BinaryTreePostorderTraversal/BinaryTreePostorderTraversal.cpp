@@ -1,5 +1,5 @@
 // BinaryTreePostorderTraversal.cpp
-// Created by Jeongjoon Lee on 4/12/2019
+// Created by Jeongjoon Lee on 4/12/2019.
 
 // Given a binary tree, return the postorder traversal of its nodes' values.
 // 
