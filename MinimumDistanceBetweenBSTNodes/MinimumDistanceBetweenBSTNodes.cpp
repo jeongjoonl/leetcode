@@ -27,27 +27,28 @@
 
 int minDiffInBST(TreeNode* root)
 {
-	std::vector<int> v;
-	inorderTraversal(root, v);
+	int result = INT_MAX;
+	TreeNode* preNode = nullptr;
+	inorderTraversal(root, preNode, result);
 	
-	int minDiff = v[1] - v[0];
-	for (int i = 1; i < v.size() - 1; ++i)
-	{
-		minDiff = std::min(minDiff, v[i + 1] - v[i]);
-	}
-
-	
-	return minDiff;
+	return result;
 }
 
-void inorderTraversal(TreeNode* node, std::vector<int>& v)
+void inorderTraversal(TreeNode* node, TreeNode*& preNode, int& minDiff)
 {
 	if (node == nullptr)
 	{
 		return;
 	}
 	
-	inorderTraversal(node->left, v);
-	v.push_back(node->val);
-	inorderTraversal(node->right, v);
+	inorderTraversal(node->left, preNode, minDiff);
+	
+	if (preNode != nullptr)
+	{
+		minDiff = std::min(minDiff, node->val - preNode->val);
+	}
+	
+	preNode = node;
+		
+	inorderTraversal(node->right, preNode, minDiff);
 }
