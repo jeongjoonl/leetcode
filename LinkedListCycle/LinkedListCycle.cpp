@@ -1,4 +1,4 @@
-// MinimumAbsoluteDifferenceInBST.cpp
+// LinkedListCycle.cpp
 // Created by Jeongjoon Lee on 4/18/2019.
 
 // Given a linked list, determine if it has a cycle in it.
