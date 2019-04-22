@@ -1,3 +1,6 @@
+// FindAllDuplicatesInAnArray.cpp
+// Created by Jeongjoon Lee on 4/22/2019.
+
 // Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
 //
 // Find all the elements that appear twice in this array.
