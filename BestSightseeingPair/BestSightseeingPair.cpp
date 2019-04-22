@@ -1,3 +1,6 @@
+// BestSightseeingPair.cpp
+// Created by Jeongjoon Lee on 4/21/2019.
+
 // Given an array A of positive integers, A[i] represents the value of the i-th sightseeing spot, and two sightseeing spots i and j have distance j - i between them.
 //
 // The score of a pair (i < j) of sightseeing spots is (A[i] + A[j] + i - j) : the sum of the values of the sightseeing spots, minus the distance between them.
