@@ -17,47 +17,31 @@
 //
 // Output: 16
 
-int dfs(vector<vector<int>>& grid, const int& i, const int& j, const int& m, const int& n)
-{
-	if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == 0)
-	{
-		return 1;
-	}
-	
-	if (grid[i][j] < 0)
-	{
-		return 0;
-	}
-	
-	// Mark visited
-	grid[i][j] = -grid[i][j];
-	
-	return dfs(grid, i + 1, j, m, n) + // Down
-		dfs(grid, i - 1, j, m, n) +    // Up
-		dfs(grid, i, j + 1, m, n) +    // Right
-		dfs(grid, i, j - 1, m, n);     // Left
-}
-
 int islandPerimeter(vector<vector<int>>& grid)
 {
-	int m = grid.size();
-	int n = (m > 0) ? grid[0].size() : 0;
 	
-	
-	int i;
-	int j;
-	
-	for (i = 0; i < m; ++i)
+	int island = 0;
+	int neighbor = 0;
+	for (size_t i = 0; i < grid.size(); ++i)
 	{
-		for (j = 0; j < n; ++j)
+		for (size_t j = 0; j < grid[i].size(); ++j)
 		{
 			if (grid[i][j] == 1)
 			{
-				goto stop;
+				++island;
+				
+				if (j + 1 < grid[i].size() && grid[i][j + 1] == 1)
+				{
+					++neighbor;
+				}
+				
+				if (i + 1 < grid.size() && grid[i + 1][j] == 1)
+				{
+					++neighbor;
+				}
 			}
 		}
 	}
-	stop:
 	
-	return dfs(grid, i, j, m, n);
+	return island * 4 - neighbor * 2;
 }
